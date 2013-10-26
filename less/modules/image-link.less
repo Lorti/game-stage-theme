@@ -1,0 +1,48 @@
+/**
+ * image-link.less
+ *
+ * @site gamestage.radiatedpixel.com
+ * @author office@manuelwieser.com (Manuel Wieser)
+ *
+ */
+
+.image-link,
+.image-link:visited,
+.image-link:hover,
+.image-link:focus {
+  display: inline-block;
+  border: none;
+
+  img {
+    display: block;
+    height: 100%;
+  }
+}
+
+.image-link--partners,
+.image-link--partners:visited,
+.image-link--partners:hover,
+.image-link--partners:focus {
+  .image-link();
+  margin-top: 1em;
+  margin-right: 1em;
+  height: 4em;
+}
+
+.image-link--logo,
+.image-link--logo:visited,
+.image-link--logo:hover,
+.image-link--logo:focus {
+  .image-link();
+  display: block;
+  height: 72px;
+}
+
+.page-tu-felix-austria-lude {
+  .image-link--logo,
+  .image-link--logo:visited,
+  .image-link--logo:hover,
+  .image-link--logo:focus {
+    height: 74px;
+  }
+}

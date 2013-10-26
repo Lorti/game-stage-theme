@@ -1,0 +1,90 @@
+/**
+ * program.less
+ *
+ * @site gamestage.radiatedpixel.com
+ * @author office@manuelwieser.com (Manuel Wieser)
+ *
+ */
+
+.event-program { }
+
+  .event-program__header {
+    color: #EC6309;
+  }
+
+  .event-program__item {
+    margin-bottom: 0;
+    color: #F59D12;
+  }
+
+
+    .event-program__item-description {
+      margin-top: 0;
+    }
+
+  .event-program__list ul {
+    margin: 0;
+  }
+
+
+/* ======== TU FELIX AUSTRIA, LUDE ======== */
+.page-tu-felix-austria-lude {
+
+  .event-program {
+    margin-bottom: 3em;
+    h2 { margin-top: .83em * 2; }
+    p:first-child { margin-top: 2.5em; }
+  }
+
+  .event-program__header,
+  .event-program__item {
+    color: #5C3088;
+  }
+
+  .event-program__game,
+  .event-program__item-description em {
+    margin-bottom: 0;
+    color: #db83d4;
+    font-style: normal;
+  }
+
+  .event-program__list {
+    padding-left: 0;
+    font-size: 1.17em;
+    color: #DB83D4;
+    list-style: none;
+    font-weight: bold;
+
+    strong {
+      color: #5C3088;
+    }
+
+    ul {
+      list-style: none;
+      font-weight: normal;
+      strong { font-weight: normal; }
+    }
+
+    .event-program__divider { margin-bottom: .5em; }
+  }
+
+}
+
+/* -------- MEDIA QUERIES -------- */
+@media only screen and (min-width: 100em) {
+
+  .page-tu-felix-austria-lude {
+
+    .hentry { margin-bottom: 0; }
+
+    .event-program--fill-wide-screen {
+      .fill-wide-screen;
+      background-color: #fff;
+      padding: 11.5em 2em 2em; // Magic Number...
+      p:first-child { margin-top: 0; }
+      h2:first-child { margin-top: 0; }
+    }
+
+  }
+
+}

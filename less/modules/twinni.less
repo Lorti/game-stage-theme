@@ -1,0 +1,126 @@
+/**
+ * twinni.less
+ *
+ * @site gamestage.radiatedpixel.com
+ * @author office@manuelwieser.com (Manuel Wieser)
+ *
+ */
+
+.twinni-versus {}
+.twinni-versus--program {
+  display: none;
+  @media only screen and (min-width: 40em) { display: block; }
+  margin-right: 10em;
+  margin-top: -2em;
+}
+
+
+  .twinni-versus__left-head {
+    position: relative;
+    float: right;
+    width: 150px;
+    height: 150px;
+    background: url('img/twinnivs.png') no-repeat;
+    background-position: -230px -150px;
+  }
+
+  .twinni-versus__left-tail {
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    width: 2000px;
+    height: 150px;
+    background: url('img/twinnivs.png') repeat-x;
+    background-position: 0 0;
+  }
+
+  .twinni-versus__right-head {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    background: url('img/twinnivs.png') no-repeat;
+    background-position: -20px -150px;
+  }
+
+  .twinni-versus__right-tail {
+    position: absolute;
+    top: 0;
+    right: -2000px;
+    width: 2000px;
+    height: 150px;
+    background: url('img/twinnivs.png') repeat-x;
+    background-position: 0 0;
+  }
+
+
+
+/* ======== TU FELIX AUSTRIA, LUDE ======== */
+.page-tu-felix-austria-lude {
+  overflow-x: hidden; // Remove the horizontal scroll bar.
+}
+.twinni-lude {
+  position: relative;
+  width: 100%;
+  img { width: 100%; }
+  .twinni-lude__left-tail {
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    width: 2000px;
+    height: 100%;
+    background-image: url('img/twinniludeleft.png');
+    background-size: 100% 100%;
+  }
+  .twinni-lude__right-tail {
+    position: absolute;
+    top: 0;
+    right: -2000px;
+    width: 2000px;
+    height: 100%;
+    background-image: url('img/twinniluderight.png');
+    background-size: 100% 100%;
+  }
+}
+
+
+
+/* ======== SPIELST DU NOCH ODER BAUST DU SCHON? ======== */
+.page-spielst-du-noch-oder-baust-du-schon {
+  overflow-x: hidden; // Remove the horizontal scroll bar.
+  background: #f8db93;
+  #page { background: none; }
+  #branding,
+  .event-title,
+  .spanning-bar {
+    position: relative;
+    z-index: 10;  // Put all these things on top of the weird repeating bars.
+  }
+}
+.twinni-diy {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+  }
+  .twinni-diy__left-tail {
+    position: absolute;
+    bottom: 0;
+    left: -1500px;
+    width: 2000px;
+    height: 400%;
+    background-image: url('img/twinnidiyleft.png');
+    background-size: 100% 100%;
+  }
+  .twinni-diy__right-tail {
+    position: absolute;
+    bottom: 0;
+    right: -1500px;
+    width: 2000px;
+    height: 400%;
+    background-image: url('img/twinnidiyright.png');
+    background-size: 100% 100%;
+  }
+}

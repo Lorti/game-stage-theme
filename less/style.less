@@ -1,0 +1,198 @@
+/* TWENTY ELEVEN */
+// We only take the most basic styles from this theme and trash more than half of it.
+@import "_twentyeleven.less";
+
+/* GALLERY */
+img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {
+  padding: 1px;
+}
+#content .gallery-columns-5 .gallery-item {
+  width: 17%;
+  padding: 0 1.5%;
+}
+#content .gallery-columns-5 .gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+/**
+ * style.less
+ *
+ * @site gamestage.radiatedpixel.com
+ * @author office@manuelwieser.com (Manuel Wieser)
+ *
+ * This is the stuff that was already on the first static GameStage@AEC
+ * page and should be independent from specific wordpress classes.
+ *
+ */
+
+@import "_boilerplate.less";
+@import "_fonts.less";
+@import "_normalize.less";
+
+
+
+/**
+ * BASE STYLES
+ */
+
+html {
+  font-size: 75%;
+  @media only screen and (min-width: 25em) {
+    font-size: 100%;
+  }
+}
+
+body {
+  background: white;
+  color: darken(#868686, 25%);
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.625;
+  padding: 0; // Resetting styles set by Twenty Eleven. Ugly, I know...
+}
+
+a, a:visited {
+  border-bottom: 1px dotted lighten(#868686, 25%);
+  color: darken(#868686, 25%);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  border-bottom: 1px solid #868686;
+  color: darken(#868686, 50%);
+  text-decoration: none;
+}
+
+.dark-link {
+  a, a:visited {
+    border-bottom: 1px dotted lighten(#000, 25%);
+  }
+  a:hover, a:active {
+    border-bottom: 1px solid #000;
+  }
+}
+
+
+#lightbox a,
+#lightbox a:visited,
+#lightbox a:hover,
+#lightbox a:active {
+  border-bottom: none;
+}
+
+// This wrapper gives as a nice margin to the left and right of the content.
+.inner-wrapper,
+#access > .menu > ul {
+  margin: 0 5%;
+  width: 90%;
+}
+
+// This handy mixin will be used later.
+.fill-wide-screen() {
+  padding-bottom: 6em;
+  position: absolute;
+  right: -48em;
+  top: 0;
+  width: 40em;
+}
+
+// This wrapper is responsible for the layout of the actual content.
+.outer-wrapper {
+  margin: 0 auto;
+  max-width: 48em;
+}
+
+  // 100em should equal 1600px and thus very wide screens.
+  @media only screen and (min-width: 100em) {
+    .outer-wrapper {
+      margin: 0 50% 0 auto;
+    }
+    // We can fill the big space with our gallery.
+    .page-spielst-du-noch-oder-baust-du-schon #content .gallery,
+    .page-competitive-games #content .gallery {
+      .fill-wide-screen;
+    }
+  }
+
+
+/**
+ * CONTENT
+ */
+
+#main,
+.hentry,
+.singular .hentry,
+.singular.page .hentry,
+#access > .menu > ul {
+  padding: 0;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  margin: 1em 0;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/**
+ * HELPER
+ */
+
+@media only screen and (min-width: 40em) {
+  .left { float: left; }
+  .right { float: right; }
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+/**
+ * MODULES
+ */
+
+@import "modules/event-info.less";
+@import "modules/event-program.less";
+@import "modules/event-title.less";
+@import "modules/image-link.less";
+@import "modules/spanning-bar.less";
+@import "modules/twinni.less";
+// This has to be the last one in the cascade.
+@import "modules/kiss.less";
+
+
+
+/**
+ * DEBUG
+ */
+
+ // .spanning-bar:first-child { display: none; }
+ #branding { margin-top: 3em; }

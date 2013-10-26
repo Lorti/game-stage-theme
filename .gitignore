@@ -11,3 +11,8 @@ sitemap.xml
 wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
+
+sftp-config.json
+node_modules/
+fonts/
+*.sublime*
