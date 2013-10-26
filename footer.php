@@ -32,7 +32,7 @@
         <a class="icon-mail" href="mailto:gamestage@radiatedpixel.com"> gamestage@radiatedpixel.com</a><br>
         <a class="icon-facebook" href="https://www.facebook.com/GameCraftLinz/events"> GameStage@AEC auf Facebook</a>
       </p>
-      <p><small>Dieses Seite wurde von <a href="http://www.manuelwieser.com/">Manuel Wieser</a> erstellt und das Theme für Wordpress wird auf Anfrage gerne zugeschickt.</small></p>
+      <p><small>Dieses <a href="https://github.com/Lorti/game-stage-theme">Theme für WordPress</a> wurde von <a href="http://www.manuelwieser.com/">Manuel Wieser</a> erstellt.<br>Kontaktieren sie ihn, wenn sie eine neue Website brauchen, er würde sich freuen ;)</small></p>
 
   	</footer><!-- /footer -->
   </div>
