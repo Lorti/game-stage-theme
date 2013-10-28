@@ -27,6 +27,9 @@
       <a class="image-link--partners" href="http://gamecraft.willkuer.at/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gamecraft.png" alt="GameCraft Logo">
       </a>
+      <a class="image-link--partners" href="http://www.bildschirmspruenge.net/">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nik.png" alt="Bildschirmsprünge">
+      </a>
 
       <p class="contact">
         <a class="icon-mail" href="mailto:gamestage@radiatedpixel.com"> gamestage@radiatedpixel.com</a><br>
