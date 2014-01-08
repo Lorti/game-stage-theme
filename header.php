@@ -25,7 +25,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="http://localhost:1337/livereload.js"></script>
+<!-- <script src="http://localhost:1337/livereload.js"></script> -->
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -105,6 +105,11 @@
 								    <img class="image-link" alt="GameStage@AEC Logo"
 												src="<?php echo get_stylesheet_directory_uri(); ?>/img/gamestage-2.png" >
 								    <?php
+								  	} else if($post->post_name === 'gamestageraumschiff') {
+								  	?>
+										<img class="image-link" alt="GameStage@Raumschiff Logo"
+												src="<?php echo get_stylesheet_directory_uri(); ?>/img/gamestage-raumschiff.png" >
+								  	<?php
 								  	} else {
 								  	?>
 										<img class="image-link" alt="GameStage@AEC Logo"

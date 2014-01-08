@@ -24,9 +24,6 @@
       <a class="image-link--partners" href="http://games.fh-hagenberg.at/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glab.png" alt="gLab Hagenberg Logo">
       </a>
-      <a class="image-link--partners" href="http://gamecraft.willkuer.at/">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gamecraft.png" alt="GameCraft Logo">
-      </a>
       <a class="image-link--partners" href="http://www.bildschirmspruenge.net/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nik.png" alt="Bildschirmsprünge">
       </a>
@@ -35,7 +32,7 @@
         <a class="icon-mail" href="mailto:gamestage@radiatedpixel.com"> gamestage@radiatedpixel.com</a><br>
         <a class="icon-facebook" href="https://www.facebook.com/GameCraftLinz/events"> GameStage@AEC auf Facebook</a>
       </p>
-      <p><small>Dieses <a href="https://github.com/Lorti/game-stage-theme">Theme für WordPress</a> wurde von <a href="http://www.manuelwieser.com/">Manuel Wieser</a> erstellt.<br>Kontaktieren Sie ihn, wenn Sie eine neue Website brauchen, er würde sich freuen ;)</small></p>
+      <p><small>Diese Seite wurde von <a href="http://www.manuelwieser.com/">Manuel Wieser</a> – einem Mitglied von <a href="http://www.radiatedpixel.com/">Radiated Pixel</a> – erstellt.<br>Falls Sie an einer Website für ihr Unternehmen interessiert sind, können Sie sich gerne per <a href="mailto:contact@radiatedpixel.com">E-Mail</a> an uns wenden.</small></p>
 
   	</footer><!-- /footer -->
   </div>
