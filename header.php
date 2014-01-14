@@ -99,6 +99,7 @@
 								title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
 								rel="home" class="image-link--logo">
 								<?php
+								  $post = $wp_query->get_queried_object();
 									if(isset($post)) {
 								    if($post->post_name === 'tu-felix-austria-lude') {
 								    ?>
