@@ -86,7 +86,15 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 	</nav><!-- #access -->
+	<a class="starburst hidden" id="acquisition" href="https://docs.google.com/forms/d/1aK-l2gfEnm983fKw8aSJzEyNiChaVuDKfgTc-YdU4kw/viewform">
+	  <span class="starburst__text">
+	    WERDE JETZT <strong>GAMESTAGE-</strong> MITGLIED!
+	  </span>
+	  <span class="starburst__foreground"></span>
+	  <span class="starburst__background"></span>
+	</a>
 </div>
+
 
 <div id="page" class="hfeed outer-wrapper">
 

@@ -1,0 +1,135 @@
+/**
+ * starburst.less
+ *
+ * @site gamestage.radiatedpixel.com
+ * @author office@manuelwieser.com (Manuel Wieser)
+ *
+ */
+
+@starburstWidth: 150px;
+@starburstHeight: 150px;
+@lightColor: #f59d12;
+@darkColor: #ec6309;
+
+.starburst { display: none; }
+
+.starburst {
+  position: relative;
+  z-index: 10;
+  float: right;
+  margin-right: 2em;
+  margin-bottom: -@starburstHeight;
+  width: @starburstWidth;
+  height: @starburstHeight;
+  font-size: 16px;
+  line-height: 20px;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (min-width: 1280px) {
+  .starburst {
+    display: block;
+    -webkit-transform: translate(-1em, 1em);
+    -moz-transform: translate(-1em, 1em);
+    -ms-transform: translate(-1em, 1em);
+    -o-transform: translate(-1em, 1em);
+    transform: translate(-1em, 1em);
+  }
+}
+
+.starburst__text {
+  display: table-cell;
+  width: @starburstWidth;
+  height: @starburstHeight;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 0 -1px 0 @darkColor;
+  font-weight: bold;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  strong { font-size: 1.25em; }
+}
+.starburst__foreground,
+.starburst__background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: @starburstWidth;
+  height: @starburstHeight;
+  background-color: @lightColor;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  .starburst:hover & {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: @starburstWidth;
+    height: @starburstHeight;
+    background-color: inherit;
+    background-image: inherit;
+    content: '';
+  }
+  &:before {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  &:after {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+.starburst__foreground {
+  z-index: -1;
+  .starburst:hover &,
+  .starburst:active & {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+}
+.starburst__background {
+  z-index: -2;
+  background-image: -webkit-radial-gradient(average(@lightColor, @darkColor) 85%, @lightColor 95%);
+  background-image: -moz-radial-gradient(average(@lightColor, @darkColor) 85%, @lightColor 95%);
+  background-image: -ms-radial-gradient(average(@lightColor, @darkColor) 85%, @lightColor 95%);
+  background-image: -o-radial-gradient(average(@lightColor, @darkColor) 85%, @lightColor 95%);
+  background-image: radial-gradient(average(@lightColor, @darkColor) 85%, @lightColor 95%);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+  .starburst:hover &,
+  .starburst:active & {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}

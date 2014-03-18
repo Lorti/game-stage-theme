@@ -40,5 +40,16 @@
 
 <?php wp_footer(); ?>
 
+<script>
+  var s = document.documentElement.style;
+  if ('transform' in s ||
+      'webkitTransform' in s ||
+      'mozTransform' in s ||
+      'msTransform' in s ||
+      'oTransform' in s) {
+    document.getElementById('acquisition').className = 'starburst';
+  }
+</script>
+
 </body>
 </html>
