@@ -97,14 +97,15 @@
 
 
 <div id="page" class="hfeed outer-wrapper">
+	<?/*
 	<div id="gamestageexpo-banner" role="banner">
 		<hgroup class="inner-wrapper">
 			<a href="http://gsexpo.radiatedpixel.com">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gsexpo-banner.jpg" >
-			</a>	
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gsexpo-banner.jpg">
+			</a>
 		</hgroup>
-		
 	</div>
+	*/?>
 
 	<header id="branding" role="banner">
 			<hgroup class="inner-wrapper">

@@ -30,9 +30,9 @@
 
       <p class="contact">
         <a class="icon-mail" href="mailto:gamestage@radiatedpixel.com"> gamestage@radiatedpixel.com</a><br>
-        <a class="icon-facebook" href="https://www.facebook.com/GameCraftLinz/events"> GameStage@AEC auf Facebook</a>
+        <a class="icon-facebook" href="https://www.facebook.com/gamestageaustria"> www.facebook.com/gamestageaustria</a>
       </p>
-      <p><small>Diese Seite wurde von <a href="http://www.manuelwieser.com/">Manuel Wieser</a> – einem Mitglied von <a href="http://www.radiatedpixel.com/">Radiated Pixel</a> – erstellt.<br>Falls Sie an einer Website für ihr Unternehmen interessiert sind, können Sie sich gerne per <a href="mailto:contact@radiatedpixel.com">E-Mail</a> an uns wenden.</small></p>
+      <p><small>Diese Seite wurde von <a href="http://www.radiatedpixel.com/">Radiated Pixel</a> erstellt.<br>Falls Sie an einer Website für ihr Unternehmen interessiert sind, können Sie sich gerne per <a href="mailto:contact@radiatedpixel.com">E-Mail</a> an uns wenden.</small></p>
 
   	</footer><!-- /footer -->
   </div>
