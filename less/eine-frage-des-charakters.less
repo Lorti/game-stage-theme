@@ -1,0 +1,28 @@
+/**
+ * @author office@manuelwieser.com
+ */
+
+@darkRed: #cc2d31;
+@lightRed: #de5854;
+@blue: #324f69;
+@green: #00965c;
+
+article {
+  .event-title__header,
+  .event-program__header {
+    color: @darkRed;
+  }
+  .event-program__item,
+  .event-title__tagline {
+    color: @lightRed;
+  }
+  .event-info {
+    color: @blue;
+  }
+  a:link,
+  a:visited,
+  .event-info__free-entry {
+    color: @green;
+    border-color: @green;
+  }
+}

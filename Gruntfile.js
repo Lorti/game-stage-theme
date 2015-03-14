@@ -12,7 +12,8 @@ module.exports = function(grunt) {
       dist: {
         options: { yuicompress: true  },
         files: {
-          "style.css": "less/style.less"
+          "style.css": "less/style.less",
+          "eine-frage-des-charakters.css": "less/eine-frage-des-charakters.less"
         }
       }
     },
