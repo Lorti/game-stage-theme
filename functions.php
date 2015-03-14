@@ -102,4 +102,17 @@
     $content = str_replace(array('&#8221;'), '&laquo;', $content);
     return $content;
   }
+
+  // ======== Themes ========
+  function gs_page_themes() {
+    global $post;
+    if (isset($post)) {
+      $path = '/' . $post->post_name . '.css';
+      if (file_exists(get_stylesheet_directory() . $path)) {
+        wp_enqueue_style('page-theme', get_stylesheet_directory_uri() . $path);
+      }
+    }
+  }
+  add_action('wp_enqueue_scripts', 'gs_page_themes');
+
 ?>
