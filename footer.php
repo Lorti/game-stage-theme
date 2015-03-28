@@ -24,7 +24,7 @@
       <a class="image-link--partners" href="http://games.fh-hagenberg.at/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glab.png" alt="gLab Hagenberg Logo">
       </a>
-      <a class="image-link--partners" href="http://www.bildschirmspruenge.net/">
+      <a class="image-link--partners">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nik.png" alt="Bildschirmsprünge">
       </a>
 
